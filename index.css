@@ -2,6 +2,47 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.navbar .left {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.navbar .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+.navbar .right img {
+  height: 24px;
+  width: 24px;
+}
+
 .project-grid {
   display: grid;
   grid-template-areas:
@@ -13,9 +54,6 @@ body {
     "foam foam dimensional"
     "foam foam dimensional";
   gap: 16px;
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
 }
 
 #eth {
@@ -87,6 +125,11 @@ body {
 
 .overlay.white {
   color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 64px;
 }
 
 @media only screen and (max-width: 1100px) {
